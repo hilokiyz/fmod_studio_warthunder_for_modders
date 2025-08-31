@@ -74,6 +74,9 @@
 		<relationship name="automationTracks">
 			<destination>{0da0e411-3f1e-4cf1-8b80-81542b65759f}</destination>
 		</relationship>
+		<relationship name="modules">
+			<destination>{b313a213-8fca-40fd-878a-2f0ed0ac4cc7}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{fac463da-9778-4405-9539-e2fb146b8241}</destination>
 		</relationship>
@@ -81,6 +84,9 @@
 	<object class="GroupTrack" id="{4b12a103-cd11-4e72-a8f0-8591c4230518}">
 		<relationship name="automationTracks">
 			<destination>{187cf3a2-9c1b-4640-9fac-046b6b6a27d5}</destination>
+		</relationship>
+		<relationship name="modules">
+			<destination>{8dd1ef57-da9b-4dee-ba2a-76d489d7eb31}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{cf8a2942-3c05-4cc0-87b9-4e41d9bd2089}</destination>
@@ -98,6 +104,8 @@
 	<object class="ParameterProxy" id="{d41e3d99-7007-4778-a745-39964dbef3de}">
 		<relationship name="modules">
 			<destination>{2febd0ed-e805-4220-bbae-246808d10d02}</destination>
+			<destination>{b313a213-8fca-40fd-878a-2f0ed0ac4cc7}</destination>
+			<destination>{8dd1ef57-da9b-4dee-ba2a-76d489d7eb31}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{388ac830-59fb-438d-a308-52141bc9997b}</destination>
@@ -131,6 +139,23 @@
 			<destination>{e1088283-a0c8-4395-9720-7042b2046748}</destination>
 		</relationship>
 	</object>
+	<object class="SingleSound" id="{b313a213-8fca-40fd-878a-2f0ed0ac4cc7}">
+		<property name="isCutoff">
+			<value>true</value>
+		</property>
+		<property name="startOffset">
+			<value>49.5</value>
+		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{a193f660-3efc-49fc-9cd8-2cc08faa2a5e}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{6da3452b-58fd-4f5f-8916-f31f0a91de05}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{fac463da-9778-4405-9539-e2fb146b8241}">
 		<property name="name">
 			<value>layer00</value>
@@ -151,6 +176,23 @@
 	<object class="AutomationTrack" id="{187cf3a2-9c1b-4640-9fac-046b6b6a27d5}">
 		<relationship name="automator">
 			<destination>{d39ac675-0093-447a-bfd0-04d1683c4e9f}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{8dd1ef57-da9b-4dee-ba2a-76d489d7eb31}">
+		<property name="isCutoff">
+			<value>true</value>
+		</property>
+		<property name="startOffset">
+			<value>49.5</value>
+		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{97031cc2-d237-4d2b-a612-25287a97a83d}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{d7c59764-b221-408e-b195-e32b1636402c}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{cf8a2942-3c05-4cc0-87b9-4e41d9bd2089}">
@@ -223,6 +265,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{56297748-eef1-4ca5-8750-baf342a3b657}" />
 	<object class="MixerBusFader" id="{afac0dec-2362-47ea-bc76-e32937290245}" />
+	<object class="RandomizerModulator" id="{a193f660-3efc-49fc-9cd8-2cc08faa2a5e}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>startOffset</value>
+		</property>
+		<property name="amount">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="Automator" id="{e1088283-a0c8-4395-9720-7042b2046748}">
 		<property name="nameOfPropertyBeingAutomated">
 			<value>volume</value>
@@ -239,6 +289,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{9851e1ff-5de2-49f6-b687-11600114da43}" />
+	<object class="RandomizerModulator" id="{97031cc2-d237-4d2b-a612-25287a97a83d}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>startOffset</value>
+		</property>
+		<property name="amount">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="Automator" id="{d39ac675-0093-447a-bfd0-04d1683c4e9f}">
 		<property name="nameOfPropertyBeingAutomated">
 			<value>volume</value>

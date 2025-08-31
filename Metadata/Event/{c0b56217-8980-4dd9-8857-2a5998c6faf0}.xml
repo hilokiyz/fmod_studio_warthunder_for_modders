@@ -5,7 +5,7 @@
 			<value>enemy_citadel_breach</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{89e1a698-0cd8-4190-a5c1-93b2b2a1e316}</destination>
@@ -66,11 +66,18 @@
 	</object>
 	<object class="MarkerTrack" id="{edb4c0f0-7d8b-4269-8fb4-3fa59f348f47}" />
 	<object class="GroupTrack" id="{602403c2-d064-44b1-baea-0f647d53e5a6}">
+		<relationship name="modules">
+			<destination>{3719e358-30ce-4a0c-98f3-13a0a626f56e}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{085dfae5-7d9b-468a-bc7b-cde8fe718ca3}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{b4519442-b446-4c77-8e4e-2085c7fd361f}" />
+	<object class="Timeline" id="{b4519442-b446-4c77-8e4e-2085c7fd361f}">
+		<relationship name="modules">
+			<destination>{3719e358-30ce-4a0c-98f3-13a0a626f56e}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{ba20e38d-0a1b-478e-8710-0f10d42b738d}">
 		<relationship name="effectChain">
 			<destination>{299d0afb-9794-476c-87f2-f9221ee8c1e9}</destination>
@@ -88,6 +95,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ac655ae4-7704-4e0d-a6f2-4e6183123b00}" />
+	<object class="SingleSound" id="{3719e358-30ce-4a0c-98f3-13a0a626f56e}">
+		<property name="length">
+			<value>2.3232291666666667</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{e49b494c-c129-4f73-ad05-e4ece061c5b3}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{085dfae5-7d9b-468a-bc7b-cde8fe718ca3}">
 		<property name="name">
 			<value>layer00</value>
